@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geiser Cerveza Artesanal</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="/img-icon/logo blanco y negro-02.png" alt="Icono">
+        </div>
+        <nav>
+            <ul class="content-nav">
+                <li><a class="barra" href="index.html">INICIO</a></li>
+                <li><a class="barra" href="variedades.html">VARIEDADES</a></li>
+                <li><a class="barra" href="info.html">INFO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <form id="formulario" class="form1">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p>Captcha: <span id="captcha"></span></p>
+            <label for="captcha_input">Ingresa el Captcha:</label>
+            <input type="text" name="captcha_input" id="captcha_input" required>
+
+            <button type="button" id="generar_captcha">Generar Captcha</button>
+
+            <button type="submit">Enviar</button>
+            <p class="err" id="err"></p>
+        </form>
+    </div>
+
+    <footer>
+        <div class="redes">
+            <a class="numero"><img src="/img-icon/whatsapp.svg" alt="icono-whatsapp">+54 9 2262 56-9265</a>
+            <a class="icono-redes" href="https://www.facebook.com/geiser.cervezaartesanal" target="_blank"><img src="/img-icon/facebook.svg" alt="icono-facebook"></a>
+            <a class="icono-redes" href="https://www.instagram.com/cervezageiser/" target="_blank"><img src="/img-icon/instagram.svg" alt="icono-instagram"></a>
+        </div>
+    </footer>
+
+    <script src="js/form.js"></script>
+    
+</body>
+</html>

@@ -3,7 +3,84 @@
     margin: 0;
     padding: 0;
     font-size: 20px;
+    font-family: 'Nunito', sans-serif;
 }
 body{
     background: url('/img-icon/fondo.avif');
+}
+header{
+    background-color: rgb(162, 221, 162);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header div .logo{
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+header div .logo:hover{
+    transform: scale(1.1);
+}
+.logo{
+    height: 200px;
+}
+.content-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+header .content-nav li:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+.menu-vertical{
+    color: black;
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+.content-nav li:hover .menu-vertical{
+    display: block;
+    background-color: rgb(162, 221, 162);
+}
+.barra{
+    text-decoration: none;
+    color: black;
+}
+.img-cerveza{
+    height: 500px;
+}
+.historia{
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.texto{
+    width: 500px;
+}
+footer{
+    background-color: rgb(162, 221, 162);
+
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 300px;
+}
+.icono-redes{
+    width: 15px;
+}
+.numero{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
 }
