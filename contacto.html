@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geiser Cerveza Artesanal</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="icon" href="./img-icon/icono-web.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img class="logo" src="./img-icon/logo blanco y negro-02.png" alt="Icono"></a>
+        </div>
+        <nav>
+            <ul class="content-nav">
+                <li><a class="barra" href="index.html">INICIO</a></li>
+                <li><a class="barra" href="cervezas.html">CERVEZAS</a></li>
+                <li><a class="barra" href="contacto.html">CONTACTO</a></li>
+                <li><a class="barra" href="login.html">INGRESA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenedor-contacto">
+        <div class="contacto-form">
+            <form>
+                <h2>Contacto</h2>
+                <p>
+                    <label for="nombrecompleto">Nombre Completo</label>
+                    <input type="text" name="nombrecompleto">
+                </p>
+                <p>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Número de teléfono</label>
+                    <input  type="tel" name="telefono">
+                </p>
+                <p>
+                    <select name="motivo" required>
+                        <option value="motivo">Motivo</option>
+                        <option value="franquicias">Franquicias</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="atencionAlCliente">Atención al cliente</option>
+                        <option value="administracion">Administración</option>
+                        <option value="barril">Barriles</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" rows="3"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </div>
+        <div class="contacto-info">
+            <h2>Información</h2>
+            <a class="icono-redes" href="https://www.instagram.com/cervezageiser/" target="_blank"><img src="./img-icon/instagram.svg" alt="icono-instagram"></a>
+            <a class="icono-redes" href="https://www.facebook.com/geiser.cervezaartesanal" target="_blank"><img src="./img-icon/facebook.svg" alt="icono-facebook"></a>
+            <a><img src="./img-icon/whatsapp.svg" alt="icono-whatsapp">+54 2262 56-9265</a>
+            <a><img src="./img-icon/ubicacion.png" alt="">63 esq 32</a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <small>&copy; 2023 <b>Geiser Cerveza Artesanal</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>

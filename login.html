@@ -6,49 +6,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geiser Cerveza Artesanal</title>
-    <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="icon" href="./img-icon/icono-web.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div>
-            <img class="logo" src="/img-icon/logo blanco y negro-02.png" alt="Icono">
+            <a href="index.html"><img class="logo" src="./img-icon/logo blanco y negro-02.png" alt="Icono"></a>
         </div>
         <nav>
             <ul class="content-nav">
                 <li><a class="barra" href="index.html">INICIO</a></li>
-                <li><a class="barra" href="variedades.html">VARIEDADES</a></li>
-                <li><a class="barra" href="info.html">INFO</a></li>
+                <li><a class="barra" href="cervezas.html">CERVEZAS</a></li>
+                <li><a class="barra" href="contacto.html">CONTACTO</a></li>
+                <li><a class="barra" href="login.html">INGRESA</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <div class="form"> 
         <form id="formulario" class="form1">
-            <label for="nombre">Nombre:</label>
+            <h2>Inicio de sesión</h2>
+            <label for="nombre">Nombre de usuario:</label>
             <input type="text" id="nombre" name="nombre" required>
     
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <p>Captcha: <span id="captcha"></span></p>
-            <label for="captcha_input">Ingresa el Captcha:</label>
+            <label for="e-mail">Correo electrónico:</label>
+            <input type="email" name="e-mail" id="e-mail" required>
+    
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <p class="captcha_text">CAPTCHA: <span id="captcha"></span></p>
+            <label for="captcha_input">Ingrese el Captcha:</label>
             <input type="text" name="captcha_input" id="captcha_input" required>
-
-            <button type="button" id="generar_captcha">Generar Captcha</button>
-
-            <button type="submit">Enviar</button>
+    
+            <button type="button" id="generar_captcha">Restablecer Captcha</button>
+            <button type="submit" id="send">Enviar</button>
             <p class="err" id="err"></p>
         </form>
-    </div>
-
+    </div> 
     <footer>
-        <div class="redes">
-            <a class="numero"><img src="/img-icon/whatsapp.svg" alt="icono-whatsapp">+54 9 2262 56-9265</a>
-            <a class="icono-redes" href="https://www.facebook.com/geiser.cervezaartesanal" target="_blank"><img src="/img-icon/facebook.svg" alt="icono-facebook"></a>
-            <a class="icono-redes" href="https://www.instagram.com/cervezageiser/" target="_blank"><img src="/img-icon/instagram.svg" alt="icono-instagram"></a>
+        <div>
+            <small>&copy; 2023 <b>Geiser Cerveza Artesanal</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
 
-    <script src="js/form.js"></script>
+    <script src="js/sricpt.js"></script>
     
 </body>
 </html>

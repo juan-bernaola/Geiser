@@ -1,0 +1,234 @@
+/*Reseteamos  los estilos predeterminados de HTML y CSS*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+/*Fondo de la pagina*/
+body{
+    background-image: url('../img-icon/fondo.avif');
+}
+/*Estilo del header y barra de navegacion*/
+header{
+    background-color: rgb(162, 221, 162);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backface-visibility: visible;
+}
+header div .logo{
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+header div .logo:hover{
+    transform: scale(1.1);
+}
+.logo{
+    height: 200px;
+}
+.content-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    padding-left: 50px;
+}
+header .content-nav li{
+    transition: all 0.2s;
+}
+header .content-nav li:hover{
+    transform: scale(1.1);
+}
+.barra{
+    text-decoration: none;
+    color: black;
+}
+/*Estilo de la seccion de historia 
+de la cerveceria*/
+.historia{
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.texto-historia{
+    font-size: 20px;
+    background: rgba(245, 222, 179, 0.90);
+    width: 400px;
+    border-radius: 10px;
+}
+.img-cerveza{
+    border-radius: 10px;
+    height: 500px;
+}
+.tipografia-dif{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Caveat', cursive;
+}
+.estilo-dif{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 123, 0);
+}
+/*Estilo footer*/
+footer div {
+    text-align: center;
+}
+/*Estilo de cervezas*/
+table{
+    background: rgb(245, 222, 179);
+    margin: 2% auto;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+}     
+th{
+    border: none;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+td{
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ibus-alc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.ibus-alc ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+.img-td{
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    width: 175px;
+    transition: all 0.3s;
+}
+.img-td:hover{
+    transform: scale(1.1)
+}
+/*Estilo del contacto*/
+.contenedor-contacto{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 1% auto;
+    padding: 20px;
+    gap: 30px;
+    background: rgb(245, 222, 179);
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.contacto-form form input,
+.contacto-form form textarea,
+.contacto-form form button,
+.contacto-form form select{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.contacto-form form textarea{
+    resize: none;
+}
+.contacto-form form button{
+    background-color: black;
+    color: aliceblue;
+    border: 0;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 30px;
+}
+.contacto-form form button{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.contacto-form form button:hover{
+    transform: scale(1.03);
+}
+.contacto-info {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.1em 0;
+}
+.contacto-info a{
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+.icono-redes{
+    width: 0%;
+    transition: all 0.3s;
+}
+.icono-redes:hover{
+    transform: scale(1.2);
+}
+/*Estilo de login.html*/
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 1% auto;
+    padding: 15px;
+}
+.form1{
+    background-color: rgb(245, 222, 179);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.form1 h2{
+    text-align: center;
+}
+#generar_captcha, #send{
+    background-color: black;
+    color: aliceblue;
+    border: 0;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#generar_captcha:hover, #send:hover{
+    transform: scale(1.03);
+}
+.captcha_text{
+    text-align: center;
+    font-size: 23px;
+}
+#captcha{
+    color: rgb(255, 123, 0);
+    font-size: 30px;
+}
+#nombre, #e-mail, #password, #captcha_input{
+    padding: 10px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
